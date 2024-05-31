@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Vignesh Chandra Vajja</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Vignesh Vajja</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="Assets/Profile Pic.JPG" alt="Vignesh Vajja profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Vignesh Vajja</h1>
+        <p class="section__text__p2">Data Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('Assets/Vignesh Chandra Vajja-Data Engineer-Updated Resume (1).pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="Assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/vigneshvajja/'"
+          />
+          <img
+            src="Assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/vignesh6666'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="Assets/3.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="Assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3+ years <br />Data Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="Assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p> Masters in Data Science and Applications <br />Bachelors of Technology in Electronics and Communication Engineering
+            </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+            <li>
+            
+                3+ years of experience as a Data Engineer with a proven track record of designing and building scalable data solutions. Skilled in
+                leveraging Cloud Data Engineering tools (Azure, AWS) to deliver Data Warehouses, Hadoop ecosystems, Big Data analytics
+                pipelines, and Data Visualization and Reporting solutions.
+            </p>
+            </li>
+            
+            <p>
+            <li>
+                Proficient in developing reusable Airflow DAGs (Directed Acyclic Graphs) for various data processing tasks, promoting code
+                maintainability and reusability.
+            </p>
+            </li>
+            <p><li>
+                Expert in developing interactive dashboards using AWS QuickSight, Power BI, and Tableau, visualizing key performance indicators
+(KPIs) from Amazon Redshift data for business stakeholders.
+            </li></p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="Assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Engineer at JP Morgan Chase & Co</h2>
+            <div class="article-container">
+                <p><li> Enhanced data ingestion pipelines using Sqoop, successfully transferring petabytes of data from relational databases to HDFS. </li></p>
+                <p><li> Built and orchestrated complex data pipelines with Airflow, scheduling and automating daily data processing tasks for 2x reduction
+                    in manual intervention. </li></p>
+                <p><li> Orchestrated data pipelines using AWS Pipeline, ensuring reliable and scheduled data movement between various AWS services. </li></p>    
+                <p><li> Led ETL optimization with Python, SQL, Spark, ensuring seamless financial data migration. </li> </p>
+              
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title"> Data Engineer at Dixion Technology</h2>
+            <div class="article-container">
+                <p><li> Developed Spark SQL queries to perform complex data transformations and aggregations, reducing data processing time by 25%.</li></p>
+                <p><li>Established Sqoop scripts with incremental loading capabilities, reducing data redundancy and improving data pipeline efficiency.</li></p>
+                <p><li>Optimized PySpark code using techniques like partitioning and caching, achieving a 25% reduction in processing time for complex
+                    data transformation</li></p>
+                <p><li>Utilized Databricks platform to build and deploy scalable Spark applications in the cloud, reducing infrastructure management
+                    overhead by 40%.</li></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="Assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1"></p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="Assets/project 1.webp"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Scalable Data Warehouse for Financial Analytics</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/vignesh6666/twitter-airflow-data-engineering-project'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="Assets/project 2.jpeg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Real-time Data Pipeline for Weather Prediction System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/vignesh6666/data_engineering_project_openweathermap_api_airflow_etl_aws'"
+              >
+                Github
+              </button>
+             
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="Assets/project 3.jpeg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title"> Real-Time Data Streaming using Kafka</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/vignesh6666/stock-market-kafka-data-engineering-project'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="Assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="Assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">vajjavignesh@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="Assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/vigneshvajja/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Vignesh Vajja. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
